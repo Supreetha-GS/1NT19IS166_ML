@@ -1,1 +1,35 @@
-dwegerg
+#print name
+print('Supreetha G S')
+
+Supreetha G S
+
+
+#addition of numbers
+a=int(input('First number'))
+b=int(input('Second number'))
+print('Sum: ',(a+b))
+
+First number3
+Second number6
+Sum:  9
+
+
+#linear search
+arr=[]
+n=int(input('Number of elememts'))
+for i in range(0,n):
+    ele=int(input());
+    arr.append(ele);
+key=int(input('Enter the key:'))
+for i in range(0,n):
+    if(arr[i]==key):
+        print('Element found at ',i)
+        break
+        
+Number of elememts2
+112
+54
+Enter the key:54
+Element found at  1
+
+
