@@ -33,3 +33,34 @@ Enter the key:54
 Element found at  1
 
 
+#binary search
+def bsearch(arr,key,low,high):
+    mid=(int)((low+high)/2)
+    if(low<high):
+        if(arr[mid]==key):
+            print("Element found at position",mid)
+        elif(key<arr[mid]):
+            bsearch(arr,key,low,mid-1)
+        elif(key>arr[mid]):
+            bsearch(arr,key,mid+1,high)
+    else:
+        print("Not found")
+        
+arr=[]
+n=int(input('Number of elememts'))
+for i in range(0,n):
+    ele=int(input());
+    arr.append(ele);
+key=int(input('Enter the key:'))
+low=0
+high=n
+bsearch(arr,key,low,high)
+
+Number of elememts4
+1
+2
+3
+4
+Enter the key:4
+Element found at position 3
+
