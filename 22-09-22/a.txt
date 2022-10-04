@@ -64,3 +64,50 @@ Number of elememts4
 Enter the key:4
 Element found at position 3
 
+
+#bubble sort
+arr=[]
+n=int(input('Number of elememts'))
+for i in range(0,n):
+    ele=int(input());
+    arr.append(ele);
+for i in range(0,n):
+    ele=arr[i]
+    for j in range(i+1,n):
+        if(arr[j]<ele):
+            temp=arr[i]
+            arr[i]=arr[j]
+            arr[j]=temp
+print(arr)
+
+Number of elememts4
+3
+2
+1
+4
+[1, 2, 3, 4]
+
+
+#insertion sort
+arr=[]
+n=int(input('Number of elememts'))
+for i in range(0,n):
+    ele=int(input());
+    arr.append(ele);
+for i in range(0,n):
+    pos=i
+    for j in range(i+1,n):
+        if(arr[j]<arr[pos]):
+            pos=j
+    temp=arr[i]
+    arr[i]=arr[pos]
+    arr[pos]=temp
+print(arr)
+
+Number of elememts3
+6
+4
+2
+[2, 4, 6]
+
+
