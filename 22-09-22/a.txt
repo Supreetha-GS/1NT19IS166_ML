@@ -111,3 +111,8 @@ Number of elememts3
 [2, 4, 6]
 
 
+#read text from a file
+file=open("/home/dslab/Documents/1nt19is166/file.txt","r")
+file.readlines()
+
+['hey supreethaaaaaaaaaaaaaaaa\n']
