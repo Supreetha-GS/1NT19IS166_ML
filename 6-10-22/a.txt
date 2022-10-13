@@ -1,1 +1,56 @@
 
+#normalizaion
+def n(l):
+    min=l[0]
+    max=l[0]
+    for i in l:
+        if(i>max):
+            max=i
+        elif(i<min):
+            min=i
+            
+            
+    for i in l:
+        print((i-min)/(max-min))
+        
+l=(10,20,30,40,50,60,70)
+n(l)
+0.0
+0.16666666666666666
+0.3333333333333333
+0.5
+0.6666666666666666
+0.8333333333333334
+1.0
+
+#standarization
+def mean(list):
+    sum=0
+    for i in list:
+        sum=sum+i
+    
+    mean=sum/len(list)
+    return mean
+def var(l):
+    ans=mean(l)
+    
+    sum1=0
+    for i in l:
+        sum1+=(ans-i)**2
+    return sum1/len(l)
+def sd(l):
+    temp=var(l)
+    return temp**0.5
+def std(l):
+    for i in l:
+        print((i-mean(l))/sd(l))
+l=(10,20,30,40,50,60,70)
+std(l)
+-1.5
+-1.0
+-0.5
+0.0
+0.5
+1.0
+1.5
+ 
